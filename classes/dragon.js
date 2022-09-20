@@ -7,6 +7,15 @@ class Dragon {
   breathesFire() {
     return `${this.name} breathes fire everywhere! BURN!!!!`;
   }
+
+  static getDragons(...dragons) {
+    let dragonNames = [];
+    dragons.forEach((dragon) =>{
+      dragonNames.push(dragon.name);
+    })
+    return dragonNames;
+  }
+
 }
 
 /****************************************************************************/
