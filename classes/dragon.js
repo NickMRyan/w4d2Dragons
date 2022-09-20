@@ -3,6 +3,10 @@ class Dragon {
     this.name = name;
     this.color = color;
   }
+
+  breathesFire() {
+    return `${this.name} breathes fire everywhere! BURN!!!!`;
+  }
 }
 
 /****************************************************************************/
