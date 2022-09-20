@@ -8,4 +8,17 @@ class FriendlyDragon extends Dragon {
     this.lifeGoals = lifeGoals;
     this.friend = friend;
   }
+
+  hasLifeGoals(){
+    this.lifeGoals.forEach((lifeGoal) => {
+      console.log(`${this.name} likes to ${lifeGoal}`)
+    })
+  }
+
+  helpsPeople() {
+    return `${this.name} helps their friend ${this.friend}`
+  }
+
 }
+
+module.exports = FriendlyDragon;
