@@ -2,4 +2,10 @@ const Dragon = require('./dragon');
 
 
 
-// Your code here
+class FriendlyDragon extends Dragon {
+  constructor(name, color, lifeGoals, friend){
+    super(name, color);
+    this.lifeGoals = lifeGoals;
+    this.friend = friend;
+  }
+}
